@@ -1,7 +1,7 @@
 '''
 Created on Sep 1, 2013
 
-@author: Michal Karm Babacek <karm@email.cz>
+@author: Michal Karm Babacek
 '''
 import sys
 import re
