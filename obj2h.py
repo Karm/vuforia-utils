@@ -108,18 +108,18 @@ if __name__ == '__main__':
     print "//   TexCoords: %d" % len(vboTextureCoordsArray)
     print "//   Indices:   %d" % len(vboIndices)
     print ""
-    print "#ifndef _QCAR_TEAPOT_OBJECT_H_"
-    print "#define _QCAR_TEAPOT_OBJECT_H_"
-    print "#define NUM_TEAPOT_OBJECT_VERTEX %d" % (len(vboVerticesArray)/3)
-    print "#define NUM_TEAPOT_OBJECT_INDEX %d" % len(vboIndices)
+    print "#ifndef _QCAR_HEAD_OBJECT_H_"
+    print "#define _QCAR_HEAD_OBJECT_H_"
+    print "#define NUM_HEAD_OBJECT_VERTEX %d" % (len(vboVerticesArray)/3)
+    print "#define NUM_HEAD_OBJECT_INDEX %d" % len(vboIndices)
     print ""
-    print "static const float teapotVertices[NUM_TEAPOT_OBJECT_VERTEX * 3] = {%s};" % (', '.join('%-5.6f' % float(v) for v in vboVerticesArray))
+    print "static const float headVertices[NUM_HEAD_OBJECT_VERTEX * 3] = {%s};" % (', '.join('%-5.6f' % float(v) for v in vboVerticesArray))
     print ""
-    print "static const float teapotNormals[NUM_TEAPOT_OBJECT_VERTEX * 3] = {%s};" % (', '.join('%-5.6f' % float(v) for v in vboNormalsArray))
+    print "static const float headNormals[NUM_HEAD_OBJECT_VERTEX * 3] = {%s};" % (', '.join('%-5.6f' % float(v) for v in vboNormalsArray))
     print ""
-    print "static const float teapotTexCoords[%d] = {%s};" % (len(vboTextureCoordsArray), (', '.join('%5.6f' % float(v) for v in vboTextureCoordsArray)))
+    print "static const float headTexCoords[%d] = {%s};" % (len(vboTextureCoordsArray), (', '.join('%5.6f' % float(v) for v in vboTextureCoordsArray)))
     print ""
-    print "static const unsigned short teapotIndices[NUM_TEAPOT_OBJECT_INDEX] = {%s};" % (', '.join('%d' % int(v) for v in vboIndices))
+    print "static const unsigned short headIndices[NUM_HEAD_OBJECT_INDEX] = {%s};" % (', '.join('%d' % int(v) for v in vboIndices))
     print ""
-    print "#endif // _QCAR_TEAPOT_OBJECT_H_"
+    print "#endif // _QCAR_HEAD_OBJECT_H_"
     print ""
